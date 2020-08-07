@@ -1,0 +1,224 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Design aplicado para tudo que estiver dentro do corpo do site */
+body{
+    font-size: 17px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: justify;
+}
+
+header #logo{
+    position: absolute;
+    top: 10px;
+    float: left;
+    height: 40px;
+}
+
+header #logo img{
+    max-height: 100%;
+}
+
+/* Design para todas as partes do menu */
+header{
+    background-color: black;
+    position: fixed; /* Deixar o menu fixo na tela */
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    z-index: 10;
+}
+
+/* Posicionar o menu à direita */
+header #menu{
+    float: right;
+    margin-right: 2%;
+}
+
+/* Estilização dos tópicos com link */
+header li{
+    list-style: none; /* Tirar o pontinho de lista  */
+    padding: 20px 20px 20px 20px;
+    float: left; /* Para deixar os itens lada a lado */
+}
+
+/* Para quando passar o mouse por cima do menu, mudar a cor do fundo */
+li:hover{
+    background-color: darkgreen;
+}
+
+#menu a{
+    text-decoration: none; /* tirar o sublinhado de um link */
+    color: white; /* Cor da letra do menu */
+}
+
+section {
+    width: 100%;
+    overflow: hidden;
+    padding: 30px 0 20px 0;
+    display: block;
+}
+
+.fundo{
+    background-color: #e7ffdb;
+}
+
+/* Estilização da capa com plano de fundo */
+#home{
+    height: 670px;
+    background-image: url(img/folhaFundo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Padrão de cores e estilo na capa */
+#inicio{
+    color: white;
+    text-align: center;
+}
+
+/* Título principal do site */
+#titulo{
+    font-size: 250%;
+    color: white;
+    font-size: 200%;
+    text-align: center;
+    padding: 3%;
+    padding-top: 15%;
+}
+
+#sub{
+    font-size: 130%;
+    padding-bottom: 5%;
+}
+
+/* Design do botao */
+#acao{
+    border: 1px white solid;
+    border-radius: 10%;
+    padding: 10px;
+    padding-left: 2%;
+    padding-right: 2%;
+    color: white;
+    text-decoration: none;
+}
+
+/* Separação da página em duas partes */
+.colunaDois{
+    float: left;
+    width: 45%;
+    padding: 15px;
+    padding-left: 2%;
+}
+
+#video{
+    padding-top: 12%;
+}
+
+.centralizado{
+    text-align: center;
+}
+
+/* Design das tabelas de informações sobre os objetivos */
+#objetivo div{
+    float: left;
+    text-align: center;
+    width: 13%;
+    border: black 1px solid;
+    border-radius: 3%;
+    margin: 2.3%;
+    padding: 1%;
+}
+
+/* Separação da pagina em tres partes */
+.colunaTres{
+    float: left;
+    width: 30%;
+    padding: 10px;
+    padding-left: 2%;
+}
+
+/* Padronização de imagem */
+.imagem{
+    width: 100%;
+    border-radius: 10%;
+    cursor: pointer;
+}
+
+.imagem:hover{
+    filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
+}
+
+#ods{
+    padding-top: 5%;
+}
+
+/* Esktilização do rodapé */
+footer{
+    background-color: #012c19;
+    color: white;
+    float: left;
+    width: 100%;
+    height: auto;
+}
+
+.img_rodape{
+    float: left;
+    width: 20%;
+    margin: 5%;
+    padding-left: 15%;
+}
+footer a{
+    color: white;
+    text-decoration: none;
+    width: 100%;
+}
+
+hr{
+    margin: 2%;
+    width: 50px;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+}
+
+h3{
+    text-align: center;
+    margin: 2%;
+    font-size: 25px;
+}
+
+p{
+    margin: 2%;
+}
+
+/* RESPONSIVIDADE */
+@media all and (max-width: 770px){
+    #menu{
+        visibility: hidden; /* esconder o menu */
+    }
+    #objetivo div, .colunaDois, .colunaTres{
+        display: block;
+        width: 85%;
+        padding: 0;
+        margin: 10px auto;
+        float: none;
+    }
+    #logo{
+        width: 100%;
+        text-align: center;
+    }
+
+    #titulo{
+    padding-top: 40%;
+    }
+
+    #objetivo div{
+        width: 80%;
+        padding: 2%;
+    }
+    footer{
+        text-align: center;
+    }
+}
